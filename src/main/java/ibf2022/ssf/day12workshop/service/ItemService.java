@@ -14,6 +14,12 @@ public class ItemService {
     @Autowired
     ItemRepo itmRepo;
 
+    // Without AutoWired, you will have to call the constructor below.
+
+    // public ItemService() {
+    //     itmRepo = new ItemRepo();
+    // }
+
     public List<Item> retrieveItemList() {
         return itmRepo.getCartItems();
     }
